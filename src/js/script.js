@@ -412,7 +412,7 @@
 
       thisCart.dom.wrapper = element;
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
-      thisCart.dom.productList = thisCart.select.productList;
+      thisCart.dom.productList = thisCart.dom.wrapper.querySelector(select.cart.productList);
     }
 
     initActions(){
@@ -428,7 +428,15 @@
     }
 
     add(menuProduct){
-      // const thisCart = this;
+
+      const thisCart = this;
+
+      /* generate HTML based on template */
+      const generatedHTML = templates.cartProduct(menuProduct);
+      /* create element using utils.createElementFromHTML */
+      const generatedDOM = utils.createDOMFromHTML(generatedHTML);
+      /* add element to menu */
+      thisCart.dom.productList.appendChild(generatedDOM);
 
       console.log('adding product', menuProduct);
     }
