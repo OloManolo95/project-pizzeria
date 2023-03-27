@@ -524,8 +524,8 @@
 
       const payload = {};
 
-      payload.address = thisCart.dom.wrapper.address;
-      payload.phone = thisCart.dom.wrapper.phone;
+      payload.address = thisCart.dom.wrapper.address.value;
+      payload.phone = thisCart.dom.wrapper.phone.value;
       payload.totalPrice = thisCart.totalPrice;
       payload.subtotalPrice = thisCart.subtotalPrice;
       payload.totalNumber = thisCart.totalNumber;
