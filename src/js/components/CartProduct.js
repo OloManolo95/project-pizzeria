@@ -10,11 +10,11 @@ class CartProduct{
     thisCartProduct.params = menuProduct.params,
     thisCartProduct.price = menuProduct.price,
     thisCartProduct.priceSingle = menuProduct.priceSingle,
-    console.log(thisCartProduct.price);
     thisCartProduct.getElements(element);
     thisCartProduct.initAmountWidget();
     thisCartProduct.initActions();
 
+    console.log(menuProduct);
     console.log('thisCartProduct', thisCartProduct);
     console.log('productAmount', thisCartProduct.amount);
   }
