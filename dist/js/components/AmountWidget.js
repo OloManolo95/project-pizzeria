@@ -33,14 +33,6 @@ class amountWidget extends BaseWidget{
     thisWidget.dom.input.value = thisWidget.value;
   }
 
-  announce(){
-    const thisWidget = this;
-    const event = new CustomEvent('updated', {
-      bubbles: true
-    });
-    thisWidget.dom.wrapper.dispatchEvent(event);
-  }
-
   initActions(){
     const thisWidget = this;
     thisWidget.dom.input.addEventListener('change', function(){
