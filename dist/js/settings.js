@@ -107,7 +107,7 @@ export const classNames = {
 
 export const settings = {
   amountWidget: {
-    defaultValue: 1,
+    defaultValue: 0,
     defaultMin: 0,
     defaultMax: 10,
   }, // CODE CHANGED
@@ -117,7 +117,7 @@ export const settings = {
   },
   // CODE ADDED END
   db: {
-    url: '//localhost:3131',
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     products: 'products',
     orders: 'orders',
     booking: 'bookings',
