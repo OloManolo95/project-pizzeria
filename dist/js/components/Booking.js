@@ -81,6 +81,9 @@ class Booking {
     thisBooking.dom.orderButton.addEventListener('click', function(event){
       event.preventDefault();
       thisBooking.sendBooking();
+      for(let table of thisBooking.dom.tables){
+        table.classList.remove(classNames.booking.tableSelected);
+      }
     });
   }
 
