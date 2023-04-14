@@ -276,10 +276,10 @@
       ]
     },
     {
-      "date": "2023-04-13",
-      "hour": "12:00",
+      "date": "2023-04-14",
+      "hour": "14:30",
       "table": 1,
-      "duration": 3,
+      "duration": 4,
       "ppl": 1,
       "phone": "",
       "address": "",
@@ -287,15 +287,37 @@
       "id": 2
     },
     {
-      "date": "2023-04-13",
+      "date": "2023-04-14",
       "hour": "12:00",
       "table": 1,
-      "duration": 3,
+      "duration": 2,
       "ppl": 1,
       "phone": "",
       "address": "",
       "starters": [],
       "id": 3
+    },
+    {
+      "date": "2023-04-14",
+      "hour": "12:00",
+      "table": 1,
+      "duration": 2,
+      "ppl": 1,
+      "phone": "",
+      "address": "",
+      "starters": [],
+      "id": 4
+    },
+    {
+      "date": "2023-04-14",
+      "hour": "15:30",
+      "table": 3,
+      "duration": 1,
+      "ppl": 1,
+      "phone": "666777888",
+      "address": "awf",
+      "starters": [],
+      "id": 5
     }
   ],
   "home": {
